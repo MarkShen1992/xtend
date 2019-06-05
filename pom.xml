@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.xtend</groupId>
+	<artifactId>xtend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<!-- JDK version specified https://www.cnblogs.com/zienzir/p/9318236.html -->
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		
+		<!-- xtend.version -->
+		<xtend.version>2.18.0</xtend.version>
+	</properties>
+
+	<dependencies>
+		<!-- this jar includes xtend.lib, xtext.xbase.lib, guava-21, xtend.lib.macro -->
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.lib</artifactId>
+			<version>${xtend.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.eclipse.xtend -->
+		<!-- 
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.core</artifactId>
+			<version>2.18.0</version>
+		</dependency>  
+		-->
+	</dependencies>
+</project>
